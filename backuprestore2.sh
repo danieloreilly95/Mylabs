@@ -51,7 +51,7 @@ elif [ "$option" = "RESTORE" ]; then
 	sleep 2
     if [[ -e "/proc" ]]; then
             echo "$CREATE already exists! "
-    else                                         #makes sure files aren't overwritten 
+    else                                         #makes sure new directories aren't created and old ones overwritten 
             mkdir $CREATE
             echo "$CREATE are created! "
     fi
